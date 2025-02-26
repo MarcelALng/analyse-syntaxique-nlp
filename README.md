@@ -1,3 +1,110 @@
+# 📘 Analyse Syntaxique NLP
+
+## 🚀 Description
+Ce projet est une **analyse syntaxique multilingue** (français et coréen) utilisant **SpaCy** pour l'extraction des dépendances syntaxiques et leur **visualisation**.
+
+📌 **Langues supportées** :
+- 🇫🇷 Français (`fr_core_news_md`)
+- 🇰🇷 Coréen (`ko_core_news_sm`)
+
+📌 **Fonctionnalités** :
+- Analyse morphologique et syntaxique avec SpaCy
+- Visualisation des dépendances syntaxiques
+- Automatisation du traitement
+- Sauvegarde des résultats en fichier JSON/CSV
+
+---
+
+## 🛠️ Installation
+### 1️⃣ **Cloner le dépôt**
+```bash
+git clone git@github.com:MarcelALng/analyse-syntaxique-nlp.git
+cd analyse-syntaxique-nlp
+```
+
+### 2️⃣ **Créer un environnement virtuel et installer les dépendances**
+```bash
+python -m venv venv
+source venv/bin/activate  # macOS/Linux
+# Pour Windows : venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+### 3️⃣ **Télécharger les modèles SpaCy**
+```bash
+python -m spacy download fr_core_news_md
+python -m spacy download ko_core_news_sm
+```
+
+---
+
+## 🚀 **Utilisation**
+
+### 1️⃣ **Exécuter le script d’analyse syntaxique**
+```bash
+python analyse.py
+```
+
+### 2️⃣ **Visualiser les dépendances syntaxiques**
+Le script génère des visualisations interactives avec **displaCy**. Pour les voir :
+```bash
+python analyse.py --visualisation
+```
+
+### 3️⃣ **Sauvegarder les résultats**
+Les résultats seront stockés dans `output/` sous format JSON ou CSV.
+
+---
+
+## 📊 **Exemple de Résultat**
+Extrait d’analyse syntaxique :
+```json
+{
+  "phrase": "Le chat noir dort sur le canapé.",
+  "tokens": [
+    {"text": "Le", "pos": "DET"},
+    {"text": "chat", "pos": "NOUN"},
+    {"text": "noir", "pos": "ADJ"},
+    {"text": "dort", "pos": "VERB"},
+    {"text": "sur", "pos": "ADP"},
+    {"text": "le", "pos": "DET"},
+    {"text": "canapé", "pos": "NOUN"},
+    {"text": ".", "pos": "PUNCT"}
+  ]
+}
+```
+
+---
+
+## 🏗️ **Structure du Projet**
+```bash
+📂 analyse-syntaxique-nlp/
+├── 📂 data/                # Données d'entrée
+├── 📂 output/              # Résultats analysés (JSON/CSV)
+├── 📂 notebooks/           # Notebooks Jupyter
+├── 📜 analyse.py           # Script principal
+├── 📜 requirements.txt     # Dépendances Python
+├── 📜 README.md            # Documentation
+```
+
+---
+
+## 🤝 **Contribuer**
+Si vous souhaitez contribuer, ouvrez une issue ou soumettez une PR sur GitHub !
+
+---
+
+## 📄 **Licence**
+Ce projet est sous licence **MIT**. Voir le fichier `LICENSE` pour plus d’informations.
+
+---
+
+## 📧 **Contact**
+👤 **Marcel Albert NGUYEN**  
+✉️ [Email](mailto:marcelalbert@example.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/marcelalbert)
+
+
 Analyse_Syntaxique_NLP
 ==============================
 
